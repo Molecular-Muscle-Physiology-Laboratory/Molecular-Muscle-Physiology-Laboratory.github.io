@@ -471,19 +471,23 @@ section.active { display: block; }
 
 .person-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.2rem;
 }
 .person-card {
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: var(--r);
-  padding: 1.4rem;
+  padding: 1.6rem 1.4rem;
   transition: border-color 0.2s, transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 .person-card:hover { border-color: rgba(0,80,39,0.35); transform: translateY(-2px); }
 .person-photo {
-  width: 72px; height: 72px;
+  width: 120px; height: 120px;
   border-radius: 50%;
   object-fit: cover; object-position: top;
   background: var(--surface);
@@ -694,6 +698,9 @@ footer .illini { color: #005027; font-weight: 700; }
   .nav-links { display: none; position: static; transform: none; }
   .nav-contact { display: none; }
   body { padding-bottom: 70px; }
+  .person-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 0.8rem; }
+  .person-photo { width: 90px; height: 90px; }
+  .person-card { padding: 1.2rem 1rem; }
 }
 
 /* Mobile bottom tab bar */
@@ -885,7 +892,7 @@ footer .illini { color: #005027; font-weight: 700; }
 
     <div class="personnel-section-title">Principal Investigator</div>
     <div class="pi-row">
-      <div class="pi-photo" style="background:url('http://mmp.beckman.illinois.edu/img/Boppart-updated.jpeg') center 15%/cover no-repeat;"></div>
+      <div class="pi-photo" style="background:url('img/IMG_E6662 Final.JPG') center 15%/cover no-repeat;"></div>
       <div>
         <div class="pi-name">Marni D. Boppart, Sc.D.</div>
         <div class="pi-role">Principal Investigator</div>
@@ -904,21 +911,21 @@ footer .illini { color: #005027; font-weight: 700; }
     <div class="personnel-section-title">Graduate Students &amp; Postdocs</div>
     <div class="person-grid">
       <div class="person-card">
-        <div class="person-photo" style="background:url('http://mmp.beckman.illinois.edu/img/SungJunChoi.jpeg') center top/cover no-repeat; display:block;"></div>
+        <div class="person-photo" style="background:url('img/Sung Jun Choi.jpeg') center top/cover no-repeat; display:block;"></div>
         <div class="person-name">Sung Jun Choi</div>
         <div class="person-role">Ph.D. Candidate</div>
         <p class="person-research">Investigating the extent to which pericytes are required for recovery of muscle mass after disuse.</p>
         <p class="person-fun">🏀 Basketball &amp; violin</p>
       </div>
       <div class="person-card">
-        <div class="person-photo" style="background:url('http://mmp.beckman.illinois.edu/img/Wei-Chun%20Kao.JPG') center top/cover no-repeat; display:block;"></div>
+        <div class="person-photo" style="background:url('img/Wei-Chun Kao.JPG') center top/cover no-repeat; display:block;"></div>
         <div class="person-name">Wei-Chun Kao</div>
         <div class="person-role">Ph.D. Candidate</div>
         <p class="person-research">Investigating cellular origin of circulating EVs after endurance training and their contribution to exercise-induced neuroplasticity.</p>
         <p class="person-fun">🏋️ Weightlifting &amp; cooking</p>
       </div>
       <div class="person-card">
-        <div class="person-photo" style="font-size:1.6rem; display:flex; align-items:center; justify-content:center;"><img src="img/garrett-steele.jpg" alt="Garrett Steele" style="width:72px;height:72px;border-radius:50%;object-fit:cover;object-position:top;"></div>
+        <div class="person-photo" style="background:url('img/garrett-steele.jpg') center top/cover no-repeat; display:block;"></div>
         <div class="person-name">Garrett Steele</div>
         <div class="person-role">M.S. Student · KIN</div>
         <p class="person-fun">🥊 Mixed martial arts, triathlon training, camping</p>
@@ -928,43 +935,43 @@ footer .illini { color: #005027; font-weight: 700; }
     <div class="personnel-section-title">Undergraduate Researchers</div>
     <div class="person-grid">
       <div class="person-card">
-        <div class="person-photo" style="background:url('img/Sophia Bach.jpg') center top/cover no-repeat;"><img src="img/sophia-bach.jpg" alt="Sophia Bach" style="width:72px;height:72px;border-radius:50%;object-fit:cover;object-position:top;"></div>
+        <div class="person-photo" style="background:url('img/sophia-bach.jpg') center top/cover no-repeat;"></div>
         <div class="person-name">Sophia Bach</div>
         <div class="person-role">Senior · KIN</div>
         <p class="person-fun">🧶 Crocheting/knitting, running, reading</p>
       </div>
       <div class="person-card">
-        <div class="person-photo" style="background:url('img/Ainsley Battle.jpg') center top/cover no-repeat;"><img src="img/ainsley-battle.jpg" alt="Ainsley Battle" style="width:72px;height:72px;border-radius:50%;object-fit:cover;object-position:top;"></div>
+        <div class="person-photo" style="background:url('img/ainsley-battle.jpg') center top/cover no-repeat;"></div>
         <div class="person-name">Ainsley Battle</div>
         <div class="person-role">Sophomore · MCB</div>
         <p class="person-fun">🏃 Running, reading, traveling, spending time with friends</p>
       </div>
       <div class="person-card">
-        <div class="person-photo" style="background:url('img/Faaris Hanif.jpg') center top/cover no-repeat;"><img src="img/faaris-hanif.jpg" alt="Faaris Hanif" style="width:72px;height:72px;border-radius:50%;object-fit:cover;object-position:top;"></div>
+        <div class="person-photo" style="background:url('img/faaris-hanif.jpg') center top/cover no-repeat;"></div>
         <div class="person-name">Faaris Hanif</div>
         <div class="person-role">Senior · MCB</div>
         <p class="person-fun">🏋️ Lifting, working out</p>
       </div>
       <div class="person-card">
-        <div class="person-photo" style="background:url('img/Katie McGovern.jpg') center top/cover no-repeat;"><img src="img/katie-mcgovern.jpg" alt="Katie McGovern" style="width:72px;height:72px;border-radius:50%;object-fit:cover;object-position:top;"></div>
+        <div class="person-photo" style="background:url('img/katie-mcgovern.jpg') center top/cover no-repeat;"></div>
         <div class="person-name">Katie McGovern</div>
         <div class="person-role">Senior · Integrative Biology</div>
         <p class="person-fun">🎨 Painting, staying active, trying new foods</p>
       </div>
       <div class="person-card">
-        <div class="person-photo" style="background:url('img/Janson Phung.jpg') center top/cover no-repeat;"><img src="img/janson-phung.jpg" alt="Janson Phung" style="width:72px;height:72px;border-radius:50%;object-fit:cover;object-position:top;"></div>
+        <div class="person-photo" style="background:url('img/janson-phung.jpg') center top/cover no-repeat;"></div>
         <div class="person-name">Janson Phung</div>
         <div class="person-role">Sophomore · MCB</div>
         <p class="person-fun">🏋️ Weightlifting, running, ceramics</p>
       </div>
       <div class="person-card">
-        <div class="person-photo" style="background:url('img/Kashyap Prasad.jpg') center top/cover no-repeat;"><img src="img/kashyap-prasad.jpg" alt="Kashyap Prasad" style="width:72px;height:72px;border-radius:50%;object-fit:cover;object-position:top;"></div>
+        <div class="person-photo" style="background:url('img/kashyap-prasad.jpg') center top/cover no-repeat;"></div>
         <div class="person-name">Kashyap Prasad</div>
         <div class="person-role">Freshman · Bioengineering</div>
         <p class="person-fun">⚽ Soccer, weightlifting, piano</p>
       </div>
       <div class="person-card">
-        <div class="person-photo" style="background:url('img/Maia Rudofski.jpg') center top/cover no-repeat;"><img src="img/maia-rudofski.jpg" alt="Maia Rudofski" style="width:72px;height:72px;border-radius:50%;object-fit:cover;object-position:top;"></div>
+        <div class="person-photo" style="background:url('img/maia-rudofski.jpg') center top/cover no-repeat;"></div>
         <div class="person-name">Maia Rudofski</div>
         <div class="person-role">Junior · MCB/KIN</div>
         <p class="person-fun">🛹 Running, crocheting, watching movies, skateboarding</p>
